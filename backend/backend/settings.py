@@ -94,14 +94,18 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # settings.py
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'yamabiko.proxy.rlwy.net',  
-        'PORT': 21751,                     
-        'USER': 'root',                   
-        'PASSWORD': 'KtzmwbXMGrkFJsNOAoSBhCxyAHvEtSLU',  
-        'NAME': 'railway',                 
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dmts_db',
+        'USER': 'dmts_db_user',
+        'PASSWORD': '4stUJMKgEk66d8c0Id8l4fxMLMlgBXHx',
+        'HOST': 'dpg-d2qps86r433s73en3rk6-a.oregon-postgres.render.com',  
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',  
+        },
     }
+}
+
 
 
 
